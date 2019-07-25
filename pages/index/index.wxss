@@ -1,0 +1,40 @@
+/**index.wxss**/
+.index_container{
+  width: 100vw;
+  height:100vh;
+  background-size: 100% 100%;
+  background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564048703738&di=11319990982a280343e49149e38fc569&imgtype=0&src=http%3A%2F%2Fattachments.gfan.com%2Fforum%2F201504%2F23%2F104257nxjbuzbxuxbzjau7.jpg')
+}
+
+.index_box{
+  width: 90%;
+  height: 60%;
+  margin-left: 5%;
+  background-color:rgba(0, 0, 0, 0.8);
+  border-radius: 5rpx;
+}
+.index_header{
+  height: 35%;
+  width: 100%;
+}
+
+.box_short{
+  opacity: 1;
+  border-radius: 20rpx;
+  width: 40%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  height: 25%;
+}
+.box_long{
+  opacity: 1;
+  border-radius: 20rpx;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  height: 30%;
+}

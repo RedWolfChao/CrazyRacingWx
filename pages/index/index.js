@@ -4,10 +4,10 @@ const app = getApp()
 
 Page({
   data: {
-    charImageUrl:'http://images.17173.com/vlog/20070118/20070118152037823.jpg',
-    cardImageUrl:'http://img4.cache.netease.com/photo/0031/2010-04-12/643QV8JU0RBT0031.jpg',
-    mapImageUrl:'http://gmcdn.kikinote.net/wp-content/uploads/2016/02/2013110311334929.jpg',
-    otherImageUrl: 'http://i1.sinaimg.cn/gm/o/i/2007-12-24/U158P115T41D135239F757DT20071224165633.jpg',
+    charImageUrl:'https://raw.githubusercontent.com/RedWolfChao/CrazyRacingWx/master/images/charInfo.png',
+    cardImageUrl:'https://raw.githubusercontent.com/RedWolfChao/CrazyRacingWx/master/images/cardInfo.png',
+    mapImageUrl:'https://raw.githubusercontent.com/RedWolfChao/CrazyRacingWx/master/images/mapInfo.png',
+    otherImageUrl: 'https://raw.githubusercontent.com/RedWolfChao/CrazyRacingWx/master/images/otherInfo.png',
     skillImageUrl:'http://image.17173.com/bbs/v1/2012/08/06/1344256713943.jpg'
 
   },

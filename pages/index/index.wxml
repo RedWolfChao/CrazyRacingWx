@@ -2,11 +2,11 @@
   <!-- <image class="index_bg" src="../../images/home_bg.jpg"></image> -->
   <view class="index_header"></view>
   <view class="index_box">
-    <image class="box_short" src="{{cardImageUrl}}" bindtap="onImageClick" id="../cardinfo/cardinfo"></image>
-    <image class="box_short" src="{{charImageUrl}}" bindtap="onImageClick" id="../charinfo/charinfo"></image>
-    <image class="box_short" src="{{mapImageUrl}}" bindtap="onImageClick" id="../mapinfo/mapinfo"></image>
-    <image class="box_short" src="{{otherImageUrl}}" bindtap="onImageClick" id="../otherinfo/otherinfo"></image>
-    <image class="box_long" src="{{skillImageUrl}}" bindtap="onImageClick" id="../skillinfo/skillinfo"></image>
+    <image class="box_short" src="../../images/cardinfo.png" bindtap="onImageClick" id="../cardinfo/cardinfo"></image>
+    <image class="box_short" src="../../images/charInfo.png" bindtap="onImageClick" id="../charinfo/charinfo"></image>
+    <image class="box_short" src="../../images/mapInfo.png" bindtap="onImageClick" id="../mapinfo/mapinfo"></image>
+    <image class="box_short" src="{{skillImageUrl}}" bindtap="onImageClick" id="../otherinfo/otherinfo"></image>
+    <image class="box_long" src="../../images/skillInfo.png" bindtap="onImageClick" id="../skillinfo/skillinfo"></image>
   </view>
   
 </view>

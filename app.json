@@ -9,7 +9,7 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#000000",
+    "navigationBarBackgroundColor": "#40CCE3",
     "navigationBarTitleText": "Crazy Racing",
     "navigationBarTextStyle": "white",
     "enablePullDownRefresh": true

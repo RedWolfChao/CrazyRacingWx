@@ -1,1 +1,32 @@
 /* pages/cardinfo/cardinfo.wxss */
+.swiper-tab{
+  width: 100%;
+  border-bottom:2rpx solid #CCC;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.swiper-tab-item{
+  width: 30%;
+  color: #434343;
+}
+.active{
+  font-weight: bold;
+  color: #F65959;
+  border-bottom: 4rpx solid #F65959;
+}
+
+.item_body{
+  text-align: center;
+}
+.item_list{
+  height: 150rpx;
+  width: 100%;
+  font-size: 50rpx;
+  line-height: 150rpx;
+  border-bottom: 1px #434343 solid;
+}

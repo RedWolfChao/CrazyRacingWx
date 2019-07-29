@@ -1,2 +1,30 @@
 <!--pages/cardinfo/cardinfo.wxml-->
-<text>pages/cardinfo/cardinfo.wxml</text>
+<!-- Tab -->
+<view class="swiper-tab">
+  <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">{{currentTab!=1?'品质 ∨':'品质 ∧'}}</view>
+  <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">{{currentTab!=2?'定位 ∨':'定位 ∧'}}</view>
+  <view class="swiper-tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="clickTab">{{currentTab!=3?'排序 ∨':'排序 ∧'}}</view>
+</view>
+<!-- body -->
+<!-- default -->
+<view class="item_body" hidden="{{currentTab!=0}}">
+  default
+</view>
+<!-- quality -->
+<view class="item_body" hidden="{{currentTab!=1}}">
+  <view class="item_list" wx:for="{{qualityList}}" wx:for-index="index" wx:for-item="item">
+    {{item.qualityName}}
+  </view>
+</view>
+<!-- location -->
+<view class="item_body" hidden="{{currentTab!=2}}">
+  <view class="item_list" wx:for="{{locationList}}" wx:for-index="index" wx:for-item="item">
+    {{item.locationName}}
+  </view>
+</view>
+<!-- sort -->
+<view class="item_body" hidden="{{currentTab!=3}}">
+  <view class="item_list" wx:for="{{sortList}}" wx:for-index="index" wx:for-item="item">
+    {{item.sortName}}
+  </view>
+</view>

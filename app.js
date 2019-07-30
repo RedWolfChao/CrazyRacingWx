@@ -34,6 +34,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    baseResUrl:"https://raw.githubusercontent.com/RedWolfChao/WxCrazyRacingRec/master"
   }
 })

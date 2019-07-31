@@ -5,7 +5,8 @@
     "pages/charinfo/charinfo",
     "pages/mapinfo/mapinfo",
     "pages/skillinfo/skillinfo",
-    "pages/skillinfo/otherinfo"
+    "pages/skillinfo/otherinfo", 
+    "pages/cardetail/cardetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

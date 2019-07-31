@@ -1,2 +1,9 @@
 <!--pages/cardetail/cardetail.wxml-->
-<text>pages/cardetail/cardetail.wxml</text>
+<!-- 文字部分 -->
+<view>文字部分</view>
+<!-- 大图部分 -->
+<view>大图部分 </view>
+<!-- 数据进度条部分 -->
+<view>数据进度条部分</view>
+<!-- 特殊效果 只有存在特殊效果的车辆 此处才会显示 -->
+<view>特殊效果 只有存在特殊效果的车辆 此处才会显示</view>

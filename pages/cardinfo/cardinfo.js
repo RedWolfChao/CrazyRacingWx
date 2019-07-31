@@ -572,6 +572,13 @@ Page({
     this.toFilterCarList();
     return false;
   },
+  /* 跳转到车辆详情界面 */
+  toCarDetail:function(e){
+    console.log(e.currentTarget.dataset.carindex);
+    wx.navigateTo({
+      url: '../cardetail/cardetail?carList=' + JSON.stringify(this.data.currentCarList) + '&&carindex=' + e.currentTarget.dataset.carindex
+    })
+  },
 
   /**
    * 过滤卡丁车List

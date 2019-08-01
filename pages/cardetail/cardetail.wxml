@@ -1,9 +1,55 @@
 <!--pages/cardetail/cardetail.wxml-->
-<!-- 文字部分 -->
-<view>文字部分</view>
-<!-- 大图部分 -->
-<view>大图部分 </view>
-<!-- 数据进度条部分 -->
-<view>数据进度条部分</view>
-<!-- 特殊效果 只有存在特殊效果的车辆 此处才会显示 -->
-<view>特殊效果 只有存在特殊效果的车辆 此处才会显示</view>
+<view class="app">
+  <!-- 品质小图部分 -->
+  <view class="detail_quality_img">
+    <image mode="scaleToFill" src="{{tranUtils.tranQualityImg(tempCarInfo.carQuality)}}"></image>
+    <image mode="scaleToFill" src="{{tranUtils.tranLocationImg(tempCarInfo.carLocation)}}"></image>
+  </view>
+  <!-- 文字部分 -->
+  <view class="detail_desc_text">{{tempCarInfo.carDesc}}</view>
+  <!-- 大图部分 -->
+  <view class="detail_car_img">
+    <image mode="widthFix"  src="../../images/temp_car_detail.png"></image>
+  </view>
+  
+  <!-- 数据进度条部分 -->
+  <view class="detail_progress">
+  <!-- 分割线 -->
+    <text class="detail_line_car_data_text">赛车数据</text>
+  <!-- 数据进度条部分 -->
+  </view>
+  <!-- 特殊效果 只有存在特殊效果的车辆 此处才会显示 -->
+  <view>特殊效果 只有存在特殊效果的车辆 此处才会显示</view>
+</view>
+<!-- 相当于script标签 -->
+<wxs module="tranUtils">
+
+  var baseResUrl = "https://raw.githubusercontent.com/RedWolfChao/WxCrazyRacingRec/master";
+  var tranQualityImg = function(name) {
+    switch (name) {
+      case "传奇":
+        return baseResUrl+"/images/res/img_qua_cq.png";
+      case "史诗":
+        return baseResUrl+"/images/res/img_qua_ss.png";
+      case "稀有":
+        return baseResUrl+"/images/res/img_qua_xy.png";
+      case "普通":
+        return baseResUrl+"/images/res/img_qua_pt.png";
+    }
+    return '';
+  }
+
+  var tranLocationImg = function(name) {
+    switch (name) {
+      case "竞速":
+        return baseResUrl+"/images/res/img_loc_js.png";
+      case "道具":
+        return baseResUrl+"/images/res/img_loc_dj.png";
+      case "全能":
+        return baseResUrl+"/images/res/img_loc_js.png";
+    }
+    return '';
+  }
+  module.exports.tranQualityImg = tranQualityImg;
+  module.exports.tranLocationImg = tranLocationImg;
+</wxs>

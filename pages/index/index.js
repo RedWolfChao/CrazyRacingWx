@@ -4,11 +4,11 @@ const app = getApp()
 
 Page({
   data: {
-    charImageUrl:'https://raw.githubusercontent.com/RedWolfChao/WxCrazyRacingRec/master/images/ic_char_info.png',
-    cardImageUrl:'https://raw.githubusercontent.com/RedWolfChao/WxCrazyRacingRec/master/images/ic_car_info.png',
-    mapImageUrl:'https://raw.githubusercontent.com/RedWolfChao/WxCrazyRacingRec/master/images/ic_map_info.png',
-    otherImageUrl: 'https://raw.githubusercontent.com/RedWolfChao/WxCrazyRacingRec/master/images/ic_other_info.png',
-    skillImageUrl:'https://raw.githubusercontent.com/RedWolfChao/WxCrazyRacingRec/master/images/ic_skill_info.png'
+    charImageUrl: app.globalData.baseResUrl+'/images/ic_char_info.png',
+    cardImageUrl: app.globalData.baseResUrl +'/images/ic_car_info.png',
+    mapImageUrl: app.globalData.baseResUrl +'/images/ic_map_info.png',
+    otherImageUrl: app.globalData.baseResUrl +'/images/ic_other_info.png',
+    skillImageUrl: app.globalData.baseResUrl +'/images/ic_skill_info.png'
 
   },
   //事件处理函数

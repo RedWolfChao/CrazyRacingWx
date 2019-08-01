@@ -1,1 +1,50 @@
 /* pages/cardetail/cardetail.wxss */
+
+.detail_quality_img {
+  width: 100%;
+  padding-top: 15rpx;
+  padding-left: 15rpx;
+  height: 60rpx;
+  display: block;
+}
+
+.detail_quality_img image {
+  display: inline-block;
+  height: 45rpx;
+  margin-right: 15rpx;
+  width: 120rpx;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  background-color: #2d69a5;
+}
+
+.detail_desc_text {
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  font-size: 0.6rem;
+  color: #fff;
+}
+
+.detail_car_img {
+  padding: 15rpx;
+}
+
+.detail_car_img image {
+  width: 100%;
+}
+.detail_progress{
+  background-image: url("https://raw.githubusercontent.com/RedWolfChao/WxCrazyRacingRec/master/images/res/img_point_line.png");
+  background-size:100% 100%;
+  text-align: center;
+}
+.detail_line_car_data_text{
+  background-color: #FF5454;
+  border-radius: 20rpx;
+  padding-left: 40rpx;
+  color: #FFF;
+  padding-right: 40rpx;
+}
+

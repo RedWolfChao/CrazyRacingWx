@@ -1,22 +1,22 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/cardetail/cardetail",
     "pages/cardinfo/cardinfo",
     "pages/charinfo/charinfo",
     "pages/mapinfo/mapinfo",
     "pages/skillinfo/skillinfo",
-    "pages/cardetail/cardetail",
     "pages/skillinfo/otherinfo"
-    
   ],
   "window": {
     "backgroundTextStyle": "light",
+    "backgroundColor": "#A1DCFC",
     "navigationBarBackgroundColor": "#BD6DDE",
     "navigationBarTitleText": "Crazy Racing",
     "navigationBarTextStyle": "white",
     "enablePullDownRefresh": true
   },
-  "debug":true,
+  "debug": true,
   "networkTimeout": {
     "request": 10000,
     "connectSocket": 20000,

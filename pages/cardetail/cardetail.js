@@ -7,6 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    baseNum:app.globalData.baseNum,
     tempCarInfo:{
       carIndex: 0,
       carName: "黄金敞篷跑车",
@@ -27,7 +28,6 @@ Page({
       carImg: "",
       carSpecialList: []
     }
-
   },
 
   /**

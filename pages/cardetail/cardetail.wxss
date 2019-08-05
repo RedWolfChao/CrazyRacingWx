@@ -15,10 +15,8 @@
   width: 120rpx;
 }
 
-.app {
-  width: 100vw;
-  height: 100vh;
-  background-color: #2d69a5;
+page{
+    background: #2d69a5;
 }
 
 .detail_desc_text {
@@ -29,22 +27,88 @@
 }
 
 .detail_car_img {
-  padding: 15rpx;
+  padding: 20rpx;
 }
 
 .detail_car_img image {
   width: 100%;
 }
-.detail_progress{
+
+.detail_progress {
   background-image: url("https://raw.githubusercontent.com/RedWolfChao/WxCrazyRacingRec/master/images/res/img_point_line.png");
-  background-size:100% 100%;
+  background-size: 100% 100%;
   text-align: center;
 }
-.detail_line_car_data_text{
-  background-color: #FF5454;
+
+.detail_line_car_data_text {
+  background-color: #ff5454;
   border-radius: 20rpx;
   padding-left: 40rpx;
-  color: #FFF;
+  color: #fff;
   padding-right: 40rpx;
 }
 
+.detail_progress_body {
+  border-radius: 20rpx;
+  background-color: #ff5454;
+  margin: 20rpx;
+  padding: 20rpx;
+}
+
+.detail_special_body {
+  border-radius: 20rpx;
+  background-color: #ff5454;
+  margin: 20rpx;
+  height: 300rpx;
+  padding: 20rpx;
+}
+.detail_progress_body_text {
+  height: 300rpx;
+  width: 20%;
+  display: inline-block;
+}
+
+.detail_progress_body_progress {
+  height: 300rpx;
+  width: 65%;
+  display: inline-block;
+}
+
+.detail_progress_pass {
+  display: inline-block;
+  background: #892603;
+  height: 50%;
+  width: 20%;
+}
+
+.detail_progress_all {
+  height: 50%;
+  background: #12345d;
+  display: inline-block;
+  width: 80%;
+}
+
+.detail_progress_body_text_item {
+  height: 20%;
+  font-size: 0.7rem;
+  text-align: left;
+}
+
+.detail_progress_body_progress_item {
+  height: 20%;
+}
+
+.detail_progress_body_num {
+  height: 300rpx;
+  width: 15%;
+  display: inline-block;
+}
+.detail_progress_body_num_item {
+  height: 20%;
+  font-size: 0.7rem;
+  text-align: center;
+}
+.detail_special_item{
+  font-size: 0.8rem;
+  color: #FFF;
+}

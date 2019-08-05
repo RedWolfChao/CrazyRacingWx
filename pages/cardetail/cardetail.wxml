@@ -9,32 +9,76 @@
   <view class="detail_desc_text">{{tempCarInfo.carDesc}}</view>
   <!-- 大图部分 -->
   <view class="detail_car_img">
-    <image mode="widthFix"  src="../../images/temp_car_detail.png"></image>
+    <image mode="widthFix" src="{{tempCarInfo.carImg}}"></image>
   </view>
-  
   <!-- 数据进度条部分 -->
   <view class="detail_progress">
-  <!-- 分割线 -->
+    <!-- 分割线 -->
     <text class="detail_line_car_data_text">赛车数据</text>
+  </view>
   <!-- 数据进度条部分 -->
+  <view class="detail_progress_body">
+    <view class="detail_progress_body_text">
+      <view class="detail_progress_body_text_item">漂移</view>
+      <view class="detail_progress_body_text_item">加速度</view>
+      <view class="detail_progress_body_text_item">弯道</view>
+      <view class="detail_progress_body_text_item">加速时间</view>
+      <view class="detail_progress_body_text_item">集气速度</view>
+    </view>
+    <view class="detail_progress_body_progress">
+      <view class="detail_progress_body_progress_item">
+        <view class="detail_progress_pass" style="width:{{(tempCarInfo.carShift)/baseNum*100}}%"></view>
+        <view class="detail_progress_all" style="width:{{(baseNum - tempCarInfo.carShift)/baseNum*100}}%"></view>
+      </view>
+      <view class="detail_progress_body_progress_item">
+        <view class="detail_progress_pass" style="width:{{(tempCarInfo.carAcceleration)/baseNum*100}}%"></view>
+        <view class="detail_progress_all" style="width:{{(baseNum - tempCarInfo.carAcceleration)/baseNum*100}}%"></view>
+      </view>
+      <view class="detail_progress_body_progress_item">
+        <view class="detail_progress_pass" style="width:{{(tempCarInfo.carCruve)/baseNum*100}}%"></view>
+        <view class="detail_progress_all" style="width:{{(baseNum - tempCarInfo.carCruve)/baseNum*100}}%"></view>
+      </view>
+      <view class="detail_progress_body_progress_item">
+        <view class="detail_progress_pass" style="width:{{(tempCarInfo.carAccelerationTime)/baseNum*100}}%"></view>
+        <view class="detail_progress_all" style="width:{{(baseNum - tempCarInfo.carAccelerationTime)/baseNum*100}}%"></view>
+      </view>
+      <view class="detail_progress_body_progress_item">
+        <view class="detail_progress_pass" style="width:{{(tempCarInfo.carGasSpeed)/baseNum*100}}%"></view>
+        <view class="detail_progress_all" style="width:{{(baseNum - tempCarInfo.carGasSpeed)/baseNum*100}}%"></view>
+      </view>
+    </view>
+    <view class="detail_progress_body_num">
+      <view class="detail_progress_body_num_item">{{tempCarInfo.carShift}}</view>
+      <view class="detail_progress_body_num_item">{{tempCarInfo.carAcceleration}}</view>
+      <view class="detail_progress_body_num_item">{{tempCarInfo.carCruve}}</view>
+      <view class="detail_progress_body_num_item">{{tempCarInfo.carAccelerationTime}}</view>
+      <view class="detail_progress_body_num_item">{{tempCarInfo.carGasSpeed}}</view>
+    </view>
   </view>
   <!-- 特殊效果 只有存在特殊效果的车辆 此处才会显示 -->
-  <view>特殊效果 只有存在特殊效果的车辆 此处才会显示</view>
+  <view class="detail_progress" hidden="{{tempCarInfo.carSpecialList.length==0}}">
+    <!-- 分割线 -->
+    <text class="detail_line_car_data_text">特殊效果</text>
+  </view>
+  <view class="detail_special_body" hidden="{{tempCarInfo.carSpecialList.length==0}}">
+<view class="detail_special_item" wx:for="{{tempCarInfo.carSpecialList}}" wx:for-index="index" wx:for-item="item">
+   {{index+1}} - {{item}}
+  </view>
+  </view>
 </view>
 <!-- 相当于script标签 -->
 <wxs module="tranUtils">
-
   var baseResUrl = "https://raw.githubusercontent.com/RedWolfChao/WxCrazyRacingRec/master";
   var tranQualityImg = function(name) {
     switch (name) {
       case "传奇":
-        return baseResUrl+"/images/res/img_qua_cq.png";
+        return baseResUrl + "/images/res/img_qua_cq.png";
       case "史诗":
-        return baseResUrl+"/images/res/img_qua_ss.png";
+        return baseResUrl + "/images/res/img_qua_ss.png";
       case "稀有":
-        return baseResUrl+"/images/res/img_qua_xy.png";
+        return baseResUrl + "/images/res/img_qua_xy.png";
       case "普通":
-        return baseResUrl+"/images/res/img_qua_pt.png";
+        return baseResUrl + "/images/res/img_qua_pt.png";
     }
     return '';
   }
@@ -42,11 +86,11 @@
   var tranLocationImg = function(name) {
     switch (name) {
       case "竞速":
-        return baseResUrl+"/images/res/img_loc_js.png";
+        return baseResUrl + "/images/res/img_loc_js.png";
       case "道具":
-        return baseResUrl+"/images/res/img_loc_dj.png";
+        return baseResUrl + "/images/res/img_loc_dj.png";
       case "全能":
-        return baseResUrl+"/images/res/img_loc_js.png";
+        return baseResUrl + "/images/res/img_loc_js.png";
     }
     return '';
   }

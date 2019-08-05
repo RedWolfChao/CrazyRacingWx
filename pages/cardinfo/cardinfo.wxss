@@ -42,13 +42,11 @@
 /* 1 4 7 ...n item样式 */
 .item_default :nth-child(3n+1){
   height: 250rpx;
-  border-radius: 20rpx;
   margin-left: 2.5%;
 }
 /* 2 5 8 ..n item样式 */
 .item_default :nth-child(3n+2){
   height: 250rpx;
-  border-radius: 20rpx;
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
@@ -57,6 +55,5 @@
 /* 3 6 9 ..n item样式 */
 .item_default :nth-child(3n){
   height: 250rpx;
-  border-radius: 20rpx;
   margin-right: 2.5%;
 }

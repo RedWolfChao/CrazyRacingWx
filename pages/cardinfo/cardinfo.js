@@ -69,7 +69,7 @@ Page({
       carApplique: -1,
       carPaint: -1,
       subImg: app.globalData.baseResUrl + "/images/car_images/car_img_hjcppc.png",
-      carImg: "",
+      carImg: app.globalData.baseResUrl + "/images/car_detail_images/img_detail_hjcp.png",
       carSpecialList: []
     }, {
       carIndex: 1,
@@ -88,7 +88,7 @@ Page({
       carApplique: -1,
       carPaint: -1,
       subImg: app.globalData.baseResUrl + "/images/car_images/car_img_qwmht.png",
-      carImg: "",
+      carImg: app.globalData.baseResUrl + "/images/car_detail_images/img_detail_mht.png",
       carSpecialList: []
     }, {
       carIndex: 2,
@@ -107,7 +107,7 @@ Page({
       carApplique: -1,
       carPaint: -1,
       subImg: app.globalData.baseResUrl + "/images/car_images/car_img_cymg.png",
-      carImg: "",
+      carImg: app.globalData.baseResUrl + "/images/car_detail_images/img_detail_mg.png",
       carSpecialList: []
     }, {
       carIndex: 3,
@@ -126,7 +126,7 @@ Page({
       carApplique: -1,
       carPaint: -1,
       subImg: app.globalData.baseResUrl + "/images/car_images/car_img_djs.png",
-      carImg: "",
+      carImg: app.globalData.baseResUrl + "/images/car_detail_images/img_detail_djs.png",
       carSpecialList: ["逃脱水炸弹 水苍蝇时可使用瞬间加速器", "被水炸弹 水苍蝇击中时高概率获得氮气", "使用磁铁吸附目标是有概率获得导弹", "100%概率防御香蕉皮,地雷,不防御巨型香蕉皮"]
     }, {
       carIndex: 4,
@@ -145,7 +145,7 @@ Page({
       carApplique: -1,
       carPaint: -1,
       subImg: app.globalData.baseResUrl + "/images/car_images/car_img_xm.png",
-      carImg: "",
+      carImg: app.globalData.baseResUrl + "/images/car_detail_images/img_detail_xm.png",
       carSpecialList: []
     }, {
       carIndex: 5,
@@ -164,7 +164,7 @@ Page({
       carApplique: -1,
       carPaint: -1,
       subImg: app.globalData.baseResUrl + "/images/car_images/car_img_cs.png",
-      carImg: "",
+      carImg: app.globalData.baseResUrl + "/images/car_detail_images/img_detail_cs.png",
       carSpecialList: []
     }, {
       carIndex: 6,
@@ -183,7 +183,7 @@ Page({
       carApplique: -1,
       carPaint: -1,
       subImg: app.globalData.baseResUrl + "/images/car_images/car_img_hj.png",
-      carImg: "",
+      carImg: app.globalData.baseResUrl + "/images/car_detail_images/img_detail_hj.png",
       carSpecialList: []
     }, {
       carIndex: 7,
@@ -202,7 +202,7 @@ Page({
       carApplique: -1,
       carPaint: -1,
       subImg: app.globalData.baseResUrl + "/images/car_images/car_img_zslx.png",
-      carImg: "",
+      carImg: app.globalData.baseResUrl + "/images/car_detail_images/img_detail_zslx.png",
       carSpecialList: []
     }, {
       carIndex: 8,
@@ -221,7 +221,7 @@ Page({
       carApplique: -1,
       carPaint: -1,
       subImg: app.globalData.baseResUrl + "/images/car_images/car_img_mls.png",
-      carImg: "",
+      carImg: app.globalData.baseResUrl + "/images/car_detail_images/img_detail_mls.png",
       carSpecialList: []
     }, {
       carIndex: 9,
@@ -240,7 +240,7 @@ Page({
       carApplique: -1,
       carPaint: -1,
       subImg: app.globalData.baseResUrl + "/images/car_images/car_img_ldcppc.png",
-      carImg: "",
+      carImg: app.globalData.baseResUrl + "/images/car_detail_images/img_detail_ldcppc.png",
       carSpecialList: []
     }, {
       carIndex: 10,
@@ -259,7 +259,7 @@ Page({
       carApplique: -1,
       carPaint: -1,
       subImg: app.globalData.baseResUrl + "/images/car_images/car_img_xjc.png",
-      carImg: "",
+      carImg: app.globalData.baseResUrl + "/images/car_detail_images/img_detail_xjc.png",
       carSpecialList: ["逃脱水炸弹 水苍蝇时可使用瞬间加速器", "道具赛中普通香蕉皮升级为巨型香蕉皮", "道具赛开局喷持续时间提升10%", "100%概率防御香蕉皮,不防御巨型香蕉皮"]
     }, {
       carIndex: 11,
@@ -278,7 +278,7 @@ Page({
       carApplique: -1,
       carPaint: -1,
       subImg: app.globalData.baseResUrl + "/images/car_images/car_img_bl.png",
-      carImg: "",
+      carImg: app.globalData.baseResUrl + "/images/car_detail_images/img_detail_bl.png",
       carSpecialList: []
     }, {
       carIndex: 12,
@@ -297,7 +297,7 @@ Page({
       carApplique: -1,
       carPaint: -1,
       subImg: app.globalData.baseResUrl + "/images/car_images/car_img_jf.png",
-      carImg: "",
+      carImg: app.globalData.baseResUrl + "/images/car_detail_images/img_detail_bl.png",
       carSpecialList: []
     }, {
       carIndex: 13,
@@ -316,7 +316,7 @@ Page({
       carApplique: -1,
       carPaint: -1,
       subImg: app.globalData.baseResUrl + "/images/car_images/car_img_jzqfc.png",
-      carImg: "",
+      carImg: app.globalData.baseResUrl + "/images/car_detail_images/img_detail_bl.png",
       carSpecialList: []
     }, {
       carIndex: 14,
@@ -335,7 +335,7 @@ Page({
       carApplique: -1,
       carPaint: -1,
       subImg: app.globalData.baseResUrl + "/images/car_images/car_img_spyder.png",
-      carImg: "",
+      carImg: app.globalData.baseResUrl + "/images/car_detail_images/img_detail_bl.png",
       carSpecialList: []
     }, {
       carIndex: 15,
@@ -354,7 +354,7 @@ Page({
       carApplique: -1,
       carPaint: -1,
       subImg: app.globalData.baseResUrl + "/images/car_images/car_img_ggc.png",
-      carImg: "",
+      carImg: app.globalData.baseResUrl + "/images/car_detail_images/img_detail_bl.png",
       carSpecialList: []
     }, {
       carIndex: 16,
@@ -373,7 +373,7 @@ Page({
       carApplique: -1,
       carPaint: -1,
       subImg: app.globalData.baseResUrl + "/images/car_images/car_img_wl.png",
-      carImg: "",
+      carImg: app.globalData.baseResUrl + "/images/car_detail_images/img_detail_wl.png",
       carSpecialList: []
     }, {
       carIndex: 17,
@@ -392,7 +392,7 @@ Page({
       carApplique: -1,
       carPaint: -1,
       subImg: app.globalData.baseResUrl + "/images/car_images/car_img_tx.png",
-      carImg: "",
+      carImg: app.globalData.baseResUrl + "/images/car_detail_images/img_detail_bl.png",
       carSpecialList: []
     }, {
       carIndex: 18,
@@ -411,7 +411,7 @@ Page({
       carApplique: -1,
       carPaint: -1,
       subImg: app.globalData.baseResUrl + "/images/car_images/car_img_pdkdc.png",
-      carImg: "",
+      carImg: app.globalData.baseResUrl + "/images/car_detail_images/img_detail_bl.png",
       carSpecialList: []
     }, {
       carIndex: 19,
@@ -430,7 +430,7 @@ Page({
       carApplique: -1,
       carPaint: -1,
       subImg: app.globalData.baseResUrl + "/images/car_images/car_img_xskdc.png",
-      carImg: "",
+      carImg: app.globalData.baseResUrl + "/images/car_detail_images/img_detail_lxkdc.png",
       carSpecialList: []
     }, {
       carIndex: 20,
@@ -449,7 +449,7 @@ Page({
       carApplique: -1,
       carPaint: -1,
       subImg: app.globalData.baseResUrl + "/images/car_images/car_img_mtc.png",
-      carImg: "",
+      carImg: app.globalData.baseResUrl + "/images/car_detail_images/img_detail_bl.png",
       carSpecialList: ["逃脱水炸弹 水苍蝇时可使用瞬间加速器", "被水炸弹击中时100%获得水苍蝇"]
     }]
   },
@@ -573,7 +573,7 @@ Page({
     return false;
   },
   /* 跳转到车辆详情界面 */
-  toCarDetail:function(e){
+  toCarDetail: function(e) {
     console.log(e.currentTarget.dataset.carindex);
     wx.navigateTo({
       url: '../cardetail/cardetail?carList=' + JSON.stringify(this.data.currentCarList) + '&&carindex=' + e.currentTarget.dataset.carindex

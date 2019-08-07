@@ -5,7 +5,7 @@
 </view>
 <!-- Tab -->
 <view class="swiper-tab">
-  <view wx:for="{{tabList}}" wx:for-item="item" class="swiper-tab-item {{(currentTab==item.tabIndex)||((filtering)&&(currFilterType==item.tabType))?'active':''}}" data-current="{{item.tabIndex}}" data-name="{{item.tabName}}" bindtap="clickTab">{{(currentTab==item.tabIndex)||((filtering)&&(currFilterType==item.tabType))?currFilterName+' ∧':item.tabName+' ∨'}}</view>
+  <view wx:for="{{tabList}}" wx:for-item="item" class="swiper-tab-item {{(currentTab==item.tabIndex)||((filtering)&&(currFilterType==item.tabType))?'active':''}}" data-current="{{item.tabIndex}}" data-name="{{item.tabName}}" bindtap="clickTab">{{(currentTab==item.tabIndex)||((filtering)&&(currFilterType==item.tabType))?currFilterName+' ∧':item.tabName+' ∨'}}</view> 
 </view>
 <!-- body -->
 <!-- default -->

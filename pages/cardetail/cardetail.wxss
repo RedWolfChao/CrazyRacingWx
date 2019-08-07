@@ -1,8 +1,9 @@
 /* pages/cardetail/cardetail.wxss */
 .detail_quality_img {
   width: 100%;
-  padding-top: 15rpx;
-  padding-left: 15rpx;
+  padding-left: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
   height: 60rpx;
   display: block;
 }
@@ -20,14 +21,17 @@ page{
 }
 
 .detail_desc_text {
-  padding-left: 15rpx;
-  padding-right: 15rpx;
+  padding: 20rpx;
+  margin: 20rpx;
   font-size: 0.6rem;
   color: #fff;
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 .detail_car_img {
+  background-color: rgba(255, 255, 255, 0.05);
   padding: 20rpx;
+  margin: 20rpx;
 }
 
 .detail_car_img image {
@@ -35,14 +39,14 @@ page{
 }
 
 .detail_progress {
-  background-image: url("https://raw.githubusercontent.com/RedWolfChao/WxCrazyRacingRec/master/images/res/img_point_line.png");
+  background-image: url("https://raw.githubusercontent.com/RedWolfChao/WxCrazyRacingRec/master/images/res/img_point_line_n.png");
   background-size: 100% 100%;
   text-align: center;
 }
 
 .detail_line_car_data_text {
-  background-color:rgba(255, 255, 255, 0.8);
-  border-radius: 20rpx;
+  background-color:#40BBFE;
+  border-radius: 15rpx;
   padding-left: 40rpx;
   color: #fff;
   padding-right: 40rpx;
@@ -50,14 +54,14 @@ page{
 
 .detail_progress_body {
   border-radius: 20rpx;
-  background-color:rgba(255, 255, 255, 0.1);
+  background-color:rgba(255, 255, 255, 0.2);
   margin: 20rpx;
   padding: 20rpx;
 }
 
 .detail_special_body {
   border-radius: 20rpx;
-  background-color:rgba(255, 255, 255, 0.1);
+  background-color:rgba(255, 255, 255, 0.2);
   margin: 20rpx;
   height: 300rpx;
   padding: 20rpx;
@@ -83,7 +87,7 @@ page{
 
 .detail_progress_all {
   height: 50%;
-  /* background: #12345d; */
+  background-color:rgba(255, 255, 255, 0.05);
   display: inline-block;
   width: 80%;
 }

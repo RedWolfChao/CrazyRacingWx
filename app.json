@@ -1,17 +1,16 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/cardetail/cardetail",
-    "pages/cardinfo/cardinfo",
     "pages/charinfo/charinfo",
     "pages/mapinfo/mapinfo",
     "pages/skillinfo/skillinfo",
-    "pages/skillinfo/otherinfo"
+    "pages/otherinfo/otherinfo",
+    "pages/cardinfo/cardinfo",
+    "pages/cardetail/cardetail"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "backgroundColor": "#A1DCFC",
-    "navigationBarBackgroundColor": "#BD6DDE",
+    "navigationBarBackgroundColor": "#040811",
     "navigationBarTitleText": "Crazy Racing",
     "navigationBarTextStyle": "white",
     "enablePullDownRefresh": true

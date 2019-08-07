@@ -8,50 +8,65 @@ Page({
     currentTab: 0,
     currFilterType: '',
     currFilterName: '',
+    searchInputValue: '',
     filtering: false,
+    tabList: [{
+      tabName: "品质",
+      tabType: "quality",
+      tabIndex: 1
+    }, {
+      tabName: "定位",
+      tabType: "location",
+      tabIndex: 2
+    }, {
+      tabName: "排序",
+      tabType: "sort",
+      tabIndex: 3
+    }],
     qualityList: [{
-      qualityIndex: 0,
+      qualityIndex: 1,
       qualityName: "传奇"
     }, {
-      qualityIndex: 1,
+      qualityIndex: 2,
       qualityName: "史诗"
     }, {
-      qualityIndex: 2,
+      qualityIndex: 3,
       qualityName: "稀有"
     }, {
-      qualityIndex: 3,
+      qualityIndex: 4,
       qualityName: "普通"
     }],
     locationList: [{
-      locationIndex: 0,
+      locationIndex: 1,
       locationName: "竞速"
     }, {
-      locationIndex: 1,
+      locationIndex: 2,
       locationName: "道具"
     }, {
-      locationIndex: 2,
+      locationIndex: 3,
       locationName: "全能"
     }, ],
     sortList: [{
-      sortIndex: 0,
+      sortIndex: 1,
       sortName: "漂移"
     }, {
-      sortIndex: 1,
+      sortIndex: 2,
       sortName: "加速度"
     }, {
-      sortIndex: 2,
+      sortIndex: 3,
       sortName: "弯道"
     }, {
-      sortIndex: 3,
+      sortIndex: 4,
       sortName: "加速时间"
     }, {
-      sortIndex: 4,
+      sortIndex: 5,
       sortName: "集气速度"
     }, {
-      sortIndex: 5,
+      sortIndex: 6,
       sortName: "特殊效果"
     }],
     currentCarList: [],
+    finalCarList:[],
     carList: [{
       carIndex: 0,
       carName: "黄金敞篷跑车",
@@ -466,7 +481,8 @@ Page({
    */
   onReady: function() {
     this.setData({
-      currentCarList: this.data.carList
+      currentCarList: this.data.carList,
+      finalCarList: this.data.carList
     });
   },
 
@@ -524,6 +540,7 @@ Page({
         filtering: false,
         currentCarList: this.data.carList
       });
+      this.toSearchByCar(this.data.searchInputValue);
       return false;
     } else {
       this.setData({
@@ -578,6 +595,36 @@ Page({
     wx.navigateTo({
       url: '../cardetail/cardetail?carList=' + JSON.stringify(this.data.currentCarList) + '&&carindex=' + e.currentTarget.dataset.carindex
     })
+  },
+  /* 搜索过滤 名称 */
+  onSearchInput: function(e) {
+    //  input 和 data的双向绑定
+    // let _this = this;
+    // let dataset = e.currentTarget.dataset;
+    // let value = e.detail.value;
+    // let name = dataset.name;
+    // _this.data[name] = value;
+    // _this.setData({
+    //   name:_this.data[name]
+    // });
+    //
+    let tempValue = e.detail.value;
+    this.toSearchByCar(tempValue);
+  
+  },
+  toSearchByCar: function (tempValue){
+    if (tempValue != '' && tempValue != undefined && tempValue != null) {
+      this.setData({
+        searchInputValue: tempValue
+      });
+      this.setData({
+        finalCarList: this.data.currentCarList.filter(this.filterNameRule)
+      });
+    } else {
+      this.setData({
+        finalCarList: this.data.currentCarList
+      });
+    }
   },
 
   /**
@@ -652,7 +699,7 @@ Page({
             if (x.carGasSpeed > y.carGasSpeed) {
               return -1;
             }
-            return 0;
+            return 0; 
           });
         } else if (this.data.currFilterName === '特殊效果') {
           tempList = this.data.carList.sort((x, y) => {
@@ -670,6 +717,7 @@ Page({
         });
         break;
     }
+    this.toSearchByCar(this.data.searchInputValue);
   },
   filterQualityRule: function(carEntity) {
     return carEntity.carQuality == this.data.currFilterName;
@@ -677,4 +725,8 @@ Page({
   filterLocationRule: function(carEntity) {
     return carEntity.carLocation == this.data.currFilterName;
   },
+  filterNameRule: function(carEntity) {
+    return carEntity.carName.indexOf(this.data.searchInputValue)!=-1;
+  },
+
 })

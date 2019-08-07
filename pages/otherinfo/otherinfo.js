@@ -1,4 +1,4 @@
-// pages/skillinfo/otherinfo.js
+// pages/otherinfo/otherinfo.js
 Page({
 
   /**

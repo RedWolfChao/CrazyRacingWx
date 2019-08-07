@@ -1,14 +1,16 @@
 <!--pages/cardinfo/cardinfo.wxml-->
+<view class="car_info_input_parent">
+  <image class="car_info_input_img" src="../../images/ic_search.png"></image>
+  <input class="car_info_input_text" placeholder="搜索" bindinput="onSearchInput" value="{{searchInputValue}}" />
+</view>
 <!-- Tab -->
 <view class="swiper-tab">
-  <view class="swiper-tab-item {{(currentTab==1)||((filtering)&&(currFilterType=='quality'))?'active':''}}" data-current="1" data-name="品质" bindtap="clickTab">{{(currentTab==1)||((filtering)&&(currFilterType=='quality'))?currFilterName+' ∧':'品质 ∨'}}</view>
-  <view class="swiper-tab-item {{(currentTab==2)||((filtering)&&(currFilterType=='location'))?'active':''}}" data-current="2" data-name="定位" bindtap="clickTab">{{(currentTab==2)||((filtering)&&(currFilterType=='location'))?currFilterName+' ∧':'定位 ∨'}}</view>
-  <view class="swiper-tab-item {{(currentTab==3)||((filtering)&&(currFilterType=='sort'))?'active':''}}" data-current="3" data-name="排序" bindtap="clickTab">{{(currentTab==3)||((filtering)&&(currFilterType=='sort'))?currFilterName+' ∧':'排序 ∨'}}</view>
+  <view wx:for="{{tabList}}" wx:for-item="item" class="swiper-tab-item {{(currentTab==item.tabIndex)||((filtering)&&(currFilterType==item.tabType))?'active':''}}" data-current="{{item.tabIndex}}" data-name="{{item.tabName}}" bindtap="clickTab">{{(currentTab==item.tabIndex)||((filtering)&&(currFilterType==item.tabType))?currFilterName+' ∧':item.tabName+' ∨'}}</view>
 </view>
 <!-- body -->
 <!-- default -->
 <view class="item_default" hidden="{{currentTab!=0}}">
-      <image class="item_default_list" wx:for="{{currentCarList}}" data-carindex="{{index}}" bindtap="toCarDetail" wx:for-index="index" wx:for-item="item" mode="aspectFit" src="{{item.subImg}}"></image>
+  <image class="item_default_list" wx:for="{{finalCarList}}" data-carindex="{{index}}" bindtap="toCarDetail" wx:for-index="index" wx:for-item="item" mode="aspectFit" src="{{item.subImg}}"></image>
 </view>
 <!-- quality -->
 <view class="item_body" hidden="{{currentTab!=1}}">

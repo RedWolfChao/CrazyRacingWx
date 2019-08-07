@@ -1,1 +1,4 @@
 /* pages/charinfo/charinfo.wxss */
+page{
+   background-color: #040811;
+}

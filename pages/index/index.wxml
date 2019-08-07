@@ -1,6 +1,7 @@
 <view class="index_container">
   <!-- <image class="index_bg" src="../../images/home_bg.jpg"></image> -->
   <view class="index_header"></view>
+  <view class="index_line_horizontal"></view>
   <view class="index_box">
     <image class="box_short_left" src="{{cardImageUrl}}" bindtap="onImageClick" id="../cardinfo/cardinfo"></image>
     <image class="box_short_right" src="{{charImageUrl}}" bindtap="onImageClick" id="../charinfo/charinfo"></image>
@@ -8,5 +9,4 @@
     <image class="box_short_right" src="{{otherImageUrl}}" bindtap="onImageClick" id="../otherinfo/otherinfo"></image>
     <image class="box_long" src="{{skillImageUrl}}" bindtap="onImageClick" id="../skillinfo/skillinfo"></image>
   </view>
-  
 </view>

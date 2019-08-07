@@ -1,4 +1,4 @@
-/* pages/mapinfo/mapinfo.wxss */
+/* pages/otherinfo/otherinfo.wxss */
 page{
    background-color: #040811;
 }

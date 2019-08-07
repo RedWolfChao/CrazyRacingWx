@@ -1,5 +1,4 @@
 /* pages/cardetail/cardetail.wxss */
-
 .detail_quality_img {
   width: 100%;
   padding-top: 15rpx;
@@ -16,7 +15,8 @@
 }
 
 page{
-    background: #2d69a5;
+   background-color: #040811;
+   color: #FFF;
 }
 
 .detail_desc_text {
@@ -41,7 +41,7 @@ page{
 }
 
 .detail_line_car_data_text {
-  background-color: #ff5454;
+  background-color:rgba(255, 255, 255, 0.8);
   border-radius: 20rpx;
   padding-left: 40rpx;
   color: #fff;
@@ -50,14 +50,14 @@ page{
 
 .detail_progress_body {
   border-radius: 20rpx;
-  background-color: #ff5454;
+  background-color:rgba(255, 255, 255, 0.1);
   margin: 20rpx;
   padding: 20rpx;
 }
 
 .detail_special_body {
   border-radius: 20rpx;
-  background-color: #ff5454;
+  background-color:rgba(255, 255, 255, 0.1);
   margin: 20rpx;
   height: 300rpx;
   padding: 20rpx;
@@ -76,14 +76,14 @@ page{
 
 .detail_progress_pass {
   display: inline-block;
-  background: #892603;
+  background: #40BBFE;
   height: 50%;
   width: 20%;
 }
 
 .detail_progress_all {
   height: 50%;
-  background: #12345d;
+  /* background: #12345d; */
   display: inline-block;
   width: 80%;
 }

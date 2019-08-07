@@ -2,20 +2,24 @@
 .index_container{
   width: 100vw;
   height:100vh;
-  background-size: 100% 100%;
-  background-image: url('https://raw.githubusercontent.com/RedWolfChao/WxCrazyRacingRec/master/images/ic_bg_n.jpg')
+}
+
+page{
+  background-color: #040811;
 }
 
 .index_box{
   width: 90%;
   height: 60%;
   margin-left: 5%;
-  background-color:rgba(0, 0, 0, 0.8);
-  border-radius: 5rpx;
+  background-color:rgba(255, 255, 255, 0.1);
 }
 .index_header{
   height: 35%;
-  width: 100%;
+  width: 90%;
+  margin-left: 5%;
+  background-size: 100% 100%;
+  background-image: url('https://raw.githubusercontent.com/RedWolfChao/WxCrazyRacingRec/master/images/ic_bg_head.png')
 }
 
 .box_short_left{
@@ -42,3 +46,4 @@
   margin-bottom: 3%;
   height: 30%;
 }
+

@@ -1,7 +1,7 @@
 /* pages/cardinfo/cardinfo.wxss */
-.swiper-tab{
+
+.swiper-tab {
   width: 100%;
-  border-bottom:2rpx solid #CCC;
   text-align: center;
   height: 88rpx;
   line-height: 88rpx;
@@ -10,50 +10,88 @@
   justify-content: space-between;
 }
 
-.swiper-tab-item{
-  width: 30%;
-  color: #434343;
-}
-.active{
-  font-weight: bold;
-  color: #F65959;
-  border-bottom: 4rpx solid #F65959;
+page {
+  background-color: #040811;
 }
 
-.item_body{
+.swiper-tab-item {
+  width: 32.5%;
+  background-color: #F3EFE3;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  color: #000;
+}
+
+.active {
+  font-weight: bold;
+  color: rgb(255, 0, 0);
+  background-color: #FCEA60;
+  border-top-left-radius: -20rpx;
+  border-bottom: 4rpx solid #FCEA60;
+}
+
+.item_body {
   text-align: center;
 }
-.item_list{
+
+.item_list {
   height: 150rpx;
   width: 100%;
   font-size: 50rpx;
+  color: #fff;
   line-height: 150rpx;
-  border-bottom: 1px #434343 solid;
+  border-bottom: 1px #fff solid;
 }
 
-.item_default{
+.item_default {
   display: inline-block;
   width: 100%;
 }
-.item_default_list{
+
+.item_default_list {
   display: inline-block;
   width: 30%;
 }
+
 /* 1 4 7 ...n item样式 */
-.item_default :nth-child(3n+1){
+
+.item_default :nth-child(3n+1) {
   height: 250rpx;
   margin-left: 2.5%;
 }
+
 /* 2 5 8 ..n item样式 */
-.item_default :nth-child(3n+2){
+
+.item_default :nth-child(3n+2) {
   height: 250rpx;
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
-
-
 /* 3 6 9 ..n item样式 */
-.item_default :nth-child(3n){
+
+.item_default :nth-child(3n) {
   height: 250rpx;
   margin-right: 2.5%;
+}
+
+/**/
+
+.car_info_input_parent {
+  height: 60rpx;
+  margin:30rpx;
+  margin-bottom: 50rpx;
+  border-radius: 15rpx;
+  background-color: #fff;
+}
+
+.car_info_input_img {
+  width: 36rpx;
+  height: 36rpx;
+  margin: 12rpx;
+}
+
+.car_info_input_text {
+  display: inline-block;
+  height: 60rpx;
+  line-height: 60rpx;
 }

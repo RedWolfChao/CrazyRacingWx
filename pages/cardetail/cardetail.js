@@ -25,7 +25,7 @@ Page({
       carApplique: -1,
       carPaint: -1,
       subImg: app.globalData.baseResUrl + "/images/car_images/car_img_hjcppc.png",
-      carImg: "",
+      carImg: app.globalData.baseResUrl + "/images/car_detail_images/img_detail_hjcp.png",
       carSpecialList: []
     }
   },

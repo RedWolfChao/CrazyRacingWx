@@ -2,11 +2,11 @@
   "pages": [
     "pages/index/index",
     "pages/charinfo/charinfo",
-    "pages/mapinfo/mapinfo",
     "pages/skillinfo/skillinfo",
     "pages/otherinfo/otherinfo",
     "pages/cardinfo/cardinfo",
-    "pages/cardetail/cardetail"
+    "pages/cardetail/cardetail",
+    "pages/mapinfo/mapinfo"
   ],
   "window": {
     "backgroundTextStyle": "light",

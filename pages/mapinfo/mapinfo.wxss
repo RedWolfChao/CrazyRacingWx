@@ -1,4 +1,89 @@
 /* pages/mapinfo/mapinfo.wxss */
-page{
-   background-color: #040811;
+
+page {
+  background-color: #FFFFFF;
+  color: antiquewhite;
+}
+.tab_container{
+  background: linear-gradient(to right, #E6FCEF , #D7DEFB); 
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.tab_line_top{
+  height: 1px;
+  background: linear-gradient(to right, #DCDADB , #75FAE9); 
+}
+.tab_line_bottom{
+  height: 1px;
+  margin-bottom: 20rpx;
+  background: linear-gradient(to right, #FFFDFE , #74F9E8); 
+}
+
+.swiper-tab {
+  width: 90%;
+  margin-left: 5%;
+  text-align: center;
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: #FFFFFF;
+  color: #57B1FD;
+  display: flex;
+  font-size: 0.6rem;
+  flex-flow: row;
+  border-radius: 60rpx;
+  justify-content: space-between;
+}
+
+.swiper-tab-item {
+  width: 32.5%;
+  font-size: 0.6rem;
+  border-radius: 60rpx;
+}
+
+.active {
+  width: 32.5%;
+  font-size: 0.7rem;
+  background-color: #57B1FD;
+  border-radius: 30rpx;
+  color: #f3efe3;
+}
+
+.category_list {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.category_list_item {
+  margin-bottom: 20rpx;
+  /* margin-top: 20rpx; */
+  height: 120rpx;
+  color: #040811;
+  border-radius: 20rpx;
+  border: 1px #C2C2C2 solid;
+  display: flex;
+  background-image: url("https://raw.githubusercontent.com/RedWolfChao/WxCrazyRacingRec/master/images/res/map_item_bg_selected.png");
+  background-size: 100% 100%;
+}
+.category_list_item_active{
+  border: 2px #75FAE9 solid;
+  border-radius: 20rpx;
+}
+
+.type_icon{
+ height: 110rpx;
+ width: 110rpx;
+ margin: 5rpx 30rpx;
+}
+.type_text{
+ margin-left: 100rpx;
+ margin-top: 10rpx;
+ font-size: 0.8rem;
+}
+.map_list{
+  width: 100%;
+}
+.map_list_item{
+  width: 49%;
+  height: 160rpx;
 }

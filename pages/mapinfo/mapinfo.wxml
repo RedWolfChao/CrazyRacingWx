@@ -1,2 +1,25 @@
-<!--pages/mapinfo/mapinfo.wxml-->
-<text>pages/mapinfo/mapinfo.wxml</text>
+<!-- TAB -->
+<view class="tab_container">
+  <view class="swiper-tab">
+    <view wx:for="{{tabList}}" wx:for-item="item" class="swiper-tab-item {{(currentTab==item.tabIndex)?'active':''}}" data-current="{{item.tabIndex}}" data-name="{{item.tabName}}" bindtap="clickTab">{{item.tabName}}</view>
+  </view>
+</view>
+<!-- TabLine -->
+<view class="tab_line_top" />
+<view class="tab_line_bottom" />
+<!-- 列表 -->
+<view class="category_list">
+  <view wx:for="{{mapTypeList}}" wx:for-item="item">
+    <!-- 类别Item -->
+    <view class="{{(activeItemIndex==item.typeIndex)?'category_list_item_active':''}}">
+      <view class="category_list_item"  data-current="{{item.typeIndex}}" data-name="{{item.typeName}}" bindtap="clickCategoryItem">
+        <image mode="aspectFit" class="type_icon" src="../../images/ps.ico"></image>
+        <text class="type_text">{{item.typeName}}</text>
+      </view>
+      <!-- 类别Item内的列表 -->
+      <view class="map_list" hidden="{{activeItemIndex!=item.typeIndex}}">
+        <image wx:for="{{showMapList}}" wx:for-item="item" class="map_list_item" src="{{testImg}}"></image>
+      </view>
+    </view>
+  </view>
+</view>
